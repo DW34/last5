@@ -1,0 +1,39 @@
+{
+  "manifest_version": 3,
+  "name": "Google Drive Last Files",
+  "description": "Displays the last five accessed Google Drive files with sorting options.",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "version": "1.0",
+  "permissions": [
+  "storage",
+  "identity"
+]
+,
+  "host_permissions": [
+    "https://www.googleapis.com/auth/drive",
+    "https://www.googleapis.com/auth/drive.file",
+    "https://www.googleapis.com/auth/drive.metadata"
+  ],
+  
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "oauth2": {
+    "client_id": "961050827363-ul3jdqgoaeoddpccim74pdlcnt65i5m0.apps.googleusercontent.com",
+    "scopes": [
+      "https://www.googleapis.com/auth/drive.metadata.readonly"
+    ]
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}

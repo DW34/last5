@@ -1,0 +1,36 @@
+<!-- popup.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Last Files</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div id="container">
+    <div id="top-nav">
+      <div id="tabs-container">
+        <div id="tabs">
+          <button class="tab-button" data-type="all">All</button>
+          <button class="tab-button" data-type="docs">Docs</button>
+          <button class="tab-button" data-type="sheets">Sheets</button>
+          <button class="tab-button" data-type="slides">Slides</button>
+          <button class="tab-button" data-type="other">Others</button>
+        </div>
+      </div>
+    </div>
+    <div id="file-list"></div>
+    <div id="bottom-controls">
+      <button id="refresh-button">Refresh</button>
+      <div id="sort-toggle">
+        <div class="toggle-track">
+          <span class="toggle-text toggle-text-left">Recent</span>
+          <span class="toggle-text toggle-text-right"></span>
+          <div class="toggle-knob"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
